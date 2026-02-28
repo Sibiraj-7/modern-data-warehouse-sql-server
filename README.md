@@ -74,3 +74,21 @@ The objective of this project was to design and implement a structured data ware
 
 - **Documentation**  
   Clear schema documentation was maintained to support analytical and business interpretation.
+---
+## 🧰 Prerequisites
+
+- SQL Server
+- SQL Server Management Studio (SSMS)
+---
+## ⚙️ Setup Instructions
+
+To reproduce this project locally:
+
+1. Create a new database in SQL Server.
+2. Execute scripts in the following order:
+   - Bronze layer (table creation + load procedures)
+   - Silver layer (cleaning & transformation logic)
+   - Gold layer (dimensional modeling & fact population)
+3. Import the provided CSV files into the Bronze layer tables.
+4. Execute stored procedures to populate Silver and Gold layers.
+5. Validate data in Gold schema using sample analytical queries.
